@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Portfólio de Lucas DEV, desenvolvedor do Brasil focado em soluções eficientes, bem estruturadas e evolução técnica rumo ao Full Stack."
+  >
+
+  <meta name="theme-color" content="#080b12">
+
+  <title>Lucas DEV — Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">
+    Pular para o conteúdo
+  </a>
+
+  <div class="loading-screen" aria-hidden="true">
+    <div class="loading-mark">
+      Lucas DEV
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-header" data-header>
+    <nav class="nav-shell" aria-label="Navegação principal">
+
+      <a
+        class="brand magnetic"
+        href="#hero"
+        aria-label="Lucas DEV — início"
+      >
+        <span class="brand-orb" aria-hidden="true"></span>
+        <span>Lucas DEV</span>
+      </a>
+
+      <button
+        class="menu-toggle magnetic"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <div
+        class="nav-panel"
+        id="primary-navigation"
+        data-nav-panel
+      >
+        <a class="nav-link" href="#about">Sobre</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projetos</a>
+        <a class="nav-link" href="#github">GitHub</a>
+        <a class="nav-link" href="#contact">Contato</a>
+
+        <button
+          class="theme-toggle magnetic"
+          type="button"
+          aria-label="Alternar tema"
+          data-theme-toggle
+        >
+          <span
+            class="theme-toggle__icon"
+            data-theme-icon
+          >
+            🌙
+          </span>
+
+          <span
+            class="theme-toggle__text"
+            data-theme-text
+          >
+            Dark
+          </span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN -->
+  <main id="main">
+
+    <!-- HERO -->
+    <section
+      class="hero section"
+      id="hero"
+      aria-labelledby="hero-title"
+    >
+      <div
+        class="ambient-grid"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-orbit hero-orbit--one"
+        aria-hidden="true"
+      ></div>
+
+      <div
+        class="hero-orbit hero-orbit--two"
+        aria-hidden="true"
+      ></div>
+
+      <div class="container hero-layout">
+
+        <!-- HERO CONTENT -->
+        <div class="hero-copy">
+
+          <p class="eyebrow reveal">
+            Developer from Brazil
+          </p>
+
+          <h1
+            class="hero-title reveal"
+            id="hero-title"
+          >
+            Lucas DEV
+          </h1>
+
+          <p class="hero-kicker reveal">
+            Developer
+            <span>•</span>
+            Creator
+            <span>•</span>
+            Problem Solver
+          </p>
+
+          <p class="hero-description reveal">
+            Desenvolvedor focado em criar soluções eficientes e bem
+            estruturadas, com interesse em tecnologia, projetos e evolução
+            técnica constante rumo ao Full Stack.
+          </p>
+
+          <div
+            class="hero-actions reveal"
+            aria-label="Ações principais"
+          >
+            <a
+              class="button button--primary magnetic"
+              href="#projects"
+            >
+              Ver projetos
+            </a>
+
+            <a
+              class="button button--secondary magnetic"
+              href="https://github.com/LucasDEVELOPER-vs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+
+          <div
+            class="hero-meta reveal"
+            aria-label="Resumo do perfil"
+          >
+            <span class="status-pill">
+              <span
+                class="status-dot"
+                aria-hidden="true"
+              ></span>
+
+              Developing...
+            </span>
+
+            <span>
+              Learning toward Full Stack
+            </span>
+          </div>
+        </div>
+
+        <!-- HERO VISUAL -->
+        <div
+          class="hero-visual reveal"
+          aria-label="Representação visual de Lucas DEV"
+        >
+          <div class="profile-card magnetic">
+
+            <div
+              class="profile-card__shine"
+              aria-hidden="true"
+            ></div>
+
+            <div class="avatar-frame">
+              <img
+                src="https://avatars.githubusercontent.com/u/257409828?v=4"
+                alt="Avatar público do GitHub de Lucas DEV"
+                loading="eager"
+              >
+            </div>
+
+            <div class="profile-card__body">
+
+              <p class="profile-label">
+                GitHub Profile
+              </p>
+
+              <h2>
+                LucasDEVELOPER-vs
+              </h2>
+
+              <p>
+                Efficient solutions. Structured interfaces.
+                Continuous evolution.
+              </p>
+
+            </div>
+
+            <div
+              class="profile-card__stats"
+              aria-label="Estatísticas públicas do GitHub"
+            >
+
+              <div>
+                <strong data-count="5">5</strong>
+                <span>Repos</span>
+              </div>
+
+              <div>
+                <strong>2026</strong>
+                <span>Since</span>
+              </div>
+
+              <div>
+                <strong>BR</strong>
+                <span>Base</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section
+      class="section"
+      id="about"
+      aria-labelledby="about-title"
+    >
+      <div class="container two-column">
+
+        <div class="section-heading reveal">
+
+          <p class="eyebrow">
+            Sobre mim
+          </p>
+
+          <h2 id="about-title">
+            Interfaces limpas, estrutura sólida e evolução constante.
+          </h2>
+
+        </div>
+
+        <div class="about-content reveal">
+
+          <p>
+            Lucas DEV é um desenvolvedor do Brasil focado em criar
+            soluções eficientes e bem estruturadas. Seu GitHub mostra
+            projetos públicos voltados para interfaces estáticas,
+            landing pages, composição visual e interações com HTML,
+            CSS e JavaScript.
+          </p>
+
+          <p>
+            As informações desta página usam dados públicos confirmados
+            no GitHub. Experiências profissionais, empresas, contatos
+            privados e tecnologias sem evidência pública não foram
+            inventados.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div
+        class="container stats-grid reveal"
+        aria-label="Fatos confirmados pelo GitHub"
+      >
+
+        <article class="stat-card magnetic">
+          <span class="stat-card__label">
+            Public Repositories
+          </span>
+
+          <strong data-count="5">
+            0
+          </strong>
+
+          <p>
+            Projetos públicos confirmados no perfil.
+          </p>
+        </article>
+
+        <article class="stat-card magnetic">
+          <span class="stat-card__label">
+            Origin
+          </span>
+
+          <strong>
+            Brazil
+          </strong>
+
+          <p>
+            Informação citada no README público.
+          </p>
+        </article>
+
+        <article class="stat-card magnetic">
+          <span class="stat-card__label">
+            Account
+          </span>
+
+          <strong>
+            2026
+          </strong>
+
+          <p>
+            Perfil público criado em janeiro de 2026.
+          </p>
+        </article>
+
+        <article class="stat-card magnetic">
+          <span class="stat-card__label">
+            Focus
+          </span>
+
+          <strong>
+            Front-end
+          </strong>
+
+          <p>
+            HTML, CSS, JavaScript e interfaces responsivas.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section
+      class="section section--soft"
+      id="skills"
+      aria-labelledby="skills-title"
+    >
+
+      <div
+        class="container section-heading section-heading--center reveal"
+      >
+
+        <p class="eyebrow">
+          Skills
+        </p>
+
+        <h2 id="skills-title">
+          Tecnologias confirmadas pelos projetos públicos.
+        </h2>
+
+        <p>
+          Cards organizados com base no que aparece no GitHub:
+          sem porcentagens falsas, sem frameworks não confirmados.
+        </p>
+
+      </div>
+
+      <div class="container skills-layout reveal">
+
+        <!-- CORE -->
+        <article class="skill-group">
+
+          <div class="skill-group__header">
+
+            <span
+              class="skill-icon"
+              aria-hidden="true"
+            >
+              ⌘
+            </span>
+
+            <h3>
+              Core
+            </h3>
+
+          </div>
+
+          <div class="skill-list">
+
+            <span class="skill-card magnetic">
+              HTML5
+            </span>
+
+            <span class="skill-card magnetic">
+              CSS3
+            </span>
+
+            <span class="skill-card magnetic">
+              JavaScript
+            </span>
+
+          </div>
+
+        </article>
+
+        <!-- FRONT-END -->
+        <article class="skill-group">
+
+          <div class="skill-group__header">
+
+            <span
+              class="skill-icon"
+              aria-hidden="true"
+            >
+              ◐
+            </span>
+
+            <h3>
+              Front-end
+            </h3>
+
+          </div>
+
+          <div class="skill-list">
+
+            <span class="skill-card magnetic">
+              Responsive Front-end
+            </span>
+
+            <span class="skill-card magnetic">
+              Static Landing Pages
+            </span>
+
+            <span class="skill-card magnetic">
+              UI Composition
+            </span>
+
+          </div>
+
+        </article>
+
+        <!-- WORKFLOW -->
+        <article class="skill-group">
+
+          <div class="skill-group__header">
+
+            <span
+              class="skill-icon"
+              aria-hidden="true"
+            >
+              ✦
+            </span>
+
+            <h3>
+              Workflow
+            </h3>
+
+          </div>
+
+          <div class="skill-list">
+
+            <span class="skill-card magnetic">
+              GitHub
+            </span>
+
+            <span class="skill-card magnetic">
+              Google Fonts
+            </span>
+
+            <span class="skill-card magnetic">
+              Vercel Deployments
+            </span>
+
+            <span class="skill-card magnetic">
+              Basic JS Interactions
+            </span>
+
+          </div>
+
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section
+      class="section"
+      id="projects"
+      aria-labelledby="projects-title"
+    >
+
+      <div class="container section-heading reveal">
+
+        <p class="eyebrow">
+          Projetos
+        </p>
+
+        <h2 id="projects-title">
+          Selected public work.
+        </h2>
+
+        <p>
+          Uma seleção de repositórios públicos com foco em interfaces,
+          landing pages e experiências visuais construídas com HTML,
+          CSS e JavaScript.
+        </p>
+
+      </div>
+
+      <div
+        class="container project-grid"
+        id="project-grid"
+        aria-live="polite"
+      ></div>
+
+    </section>
+
+    <!-- GITHUB -->
+    <section
+      class="section section--soft"
+      id="github"
+      aria-labelledby="github-title"
+    >
+
+      <div class="container github-shell reveal">
+
+        <div class="section-heading">
+
+          <p class="eyebrow">
+            GitHub API
+          </p>
+
+          <h2 id="github-title">
+            Live GitHub snapshot.
+          </h2>
+
+          <p>
+            Esta seção tenta carregar dados públicos em tempo real.
+            Se a API estiver indisponível, o site continua funcionando
+            com dados verificados.
+          </p>
+
+        </div>
+
+        <div
+          class="github-status"
+          id="github-status"
+          role="status"
+          aria-live="polite"
+        >
+
+          <span
+            class="loading-dot"
+            aria-hidden="true"
+          ></span>
+
+          Carregando dados públicos do GitHub...
+
+        </div>
+
+        <div
+          class="github-profile"
+          id="github-profile"
+        ></div>
+
+        <div
+          class="github-repos"
+          id="github-repos"
+        ></div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section
+      class="section contact-section"
+      id="contact"
+      aria-labelledby="contact-title"
+    >
+
+      <div
+        class="container contact-card reveal magnetic"
+      >
+
+        <p class="eyebrow">
+          Contato
+        </p>
+
+        <h2 id="contact-title">
+          Let's build something great.
+        </h2>
+
+        <p>
+          O contato público confirmado para Lucas DEV é o GitHub.
+          Outros canais podem ser adicionados quando forem fornecidos
+          ou encontrados de forma confiável.
+        </p>
+
+        <div class="contact-actions">
+
+          <a
+            class="button button--primary magnetic"
+            href="https://github.com/LucasDEVELOPER-vs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Abrir GitHub
+          </a>
+
+          <a
+            class="button button--secondary magnetic"
+            href="#projects"
+          >
+            Rever projetos
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <div class="container footer-inner">
+
+      <p>
+        © 2026 Lucas DEV
+      </p>
+
+      <p>
+        Built with HTML, CSS and JavaScript.
+      </p>
+
+      <a
+        href="https://github.com/LucasDEVELOPER-vs"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub
+      </a>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
